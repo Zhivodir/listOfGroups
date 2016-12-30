@@ -28,10 +28,10 @@ public class Student {
     public Student() {
     }
 
-    public Student(String name, String surname) {
+    public Student(String name, String surname, Group group) {
         this.name = name;
         this.surname = surname;
-        //this.group = group;
+        this.group = group;
     }
 
     public int getId() {
@@ -68,11 +68,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", group=" + group +
-                '}';
+        return id + ". " + name + " " + surname;
     }
 }
